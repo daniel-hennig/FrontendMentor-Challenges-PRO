@@ -1,0 +1,138 @@
+/* ================== Colors ================== */
+// Primary
+$clr-darkPink: hsl(337, 48%, 49%);
+$clr-linkWaterWhite: hsl(220, 60%, 99%);
+
+// Secondary
+$clr-sanJuanBlue: hsl(207, 33%, 32%);
+$clr-lightSanJuanBlue: hsl(207, 16%, 50%);
+$clr-lightSanJuanBlueTransparent: hsla(207, 16%, 50%, 0.5);
+$clr-mirageBlue: hsl(207, 27%, 15%);
+$clr-charmPink: hsl(337, 60%, 64%); // (Actives)
+
+/* ================ Typography ================ */
+// Font Family
+@font-face {
+    src: url('/assets/Fonts/DM\ Serif\ Display/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('/assets/Fonts/Public\ Sans/static/PublicSans-Regular.ttf') format('truetype');
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('/assets/Fonts/Public\ Sans/static/PublicSans-Bold.ttf') format('truetype');
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: bold;
+}
+
+$ff-dmSerifDisplay: 'DM Serif Display';
+$ff-publicSans: 'Public Sans';
+
+// Font Sizes
+$fs-h1-Large: 4.5rem; // 72px
+$fs-h1-Small: 3.5rem; // 56px
+$fs-h2: 3rem; // 48px
+$fs-h3-Big: 2rem; // 32px
+$fs-h3-Small: 1.125rem; // 18px
+$fs-h4: 1.5rem; // 24px
+$fs-body: .9375rem; // 15px
+
+// Line Heights
+$lh-h1-Large: 4.5rem; // 72px
+$lh-h1-Small: 3.5rem; // 56px
+$lh-h2: 3.5rem; // 56px
+$lh-h3-Big: 2.5rem; // 40px
+$lh-h3-Small: 1.5625rem; // 25px
+$lh-h4: 2rem; // 32px
+$lh-body: 1.75rem; // 28px
+
+/* ================= Buttons ================== */
+button {
+    all: unset;
+    border-radius: 24px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $ff-publicSans;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    height: 48px;
+    width: 11.5333rem;
+    text-align: center;
+}
+
+// Primary
+
+.btn-primary {
+    background-color: $clr-darkPink;
+    color: $clr-linkWaterWhite;
+}
+
+.btn-primary:hover, .btn-primary:focus-visible {
+    background-color: $clr-charmPink;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+}
+
+// Secondary About
+
+.btn-secondary-about {
+    background-color: $clr-mirageBlue;
+    border: 1px solid $clr-linkWaterWhite;
+    color: $clr-linkWaterWhite;
+}
+
+.btn-secondary-about:hover, .btn-secondary-about:focus-visible {
+    background-color: $clr-linkWaterWhite;
+    border: 1px solid $clr-mirageBlue;
+    color: $clr-mirageBlue;
+}
+
+.btn-secondary-about-disabled {
+    opacity: 0.5;
+}
+
+// Secondary Submit
+
+.btn-secondary-submit {
+    background-color: #EDF3F8;
+    border: 1px solid $clr-sanJuanBlue;
+    color: $clr-sanJuanBlue;
+}
+
+.btn-secondary-submit:hover, .btn-secondary-submit:focus-visible {
+    background-color: $clr-sanJuanBlue;
+    border: 1px solid $clr-sanJuanBlue;
+    color: $clr-linkWaterWhite;
+}
+
+.btn-secondary-submit-disabled {
+    opacity: 0.5;
+}
+
+
+/* =================== Form =================== */
+// Input
+.cta-email {
+    background-color: $clr-linkWaterWhite;
+    border: none;
+    border-radius: 24px;
+    color: $clr-sanJuanBlue;
+    -moz-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    font-family: $ff-publicSans;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding: 0 27px;
+    height: 48px;
+}

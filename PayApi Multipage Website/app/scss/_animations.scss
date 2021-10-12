@@ -1,0 +1,114 @@
+@keyframes firstSpanAnima {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    to {
+        transform-origin: center 0;
+        transform: translateY(6px) rotate(45deg);
+    }
+}
+
+@keyframes reverseFirstSpanAnima {
+    from {
+        transform-origin: 10px 0px;
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    50% {
+        transform-origin: 10px 0px;
+        transform: translateY(6px) rotate(0deg);
+    }
+
+    to {
+        transform-origin: 1px 1px;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes thirdSpanAnima {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    to {
+        transform-origin: center 3px;
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+@keyframes reverseThirdSpanAnima {
+    from {
+        transform-origin: center 3px;
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    50% {
+        transform-origin: center 3px;
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    to {
+        transform-origin: 1px 1px;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.first-span-anima {
+    background-color: $clr-linkWaterWhite !important;
+    animation: firstSpanAnima 400ms ease-in-out forwards;
+}
+
+.third-span-anima {
+    background-color: $clr-linkWaterWhite !important;
+    animation: thirdSpanAnima 400ms ease-in-out forwards;
+}
+
+.reverse-first-span-anima {
+    background-color: initial;
+    animation: reverseFirstSpanAnima 500ms ease-in-out forwards;
+}
+
+.reverse-third-span-anima {
+    background-color: initial;
+    animation: reverseThirdSpanAnima 500ms ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        visibility: hidden;
+    }
+
+    1% {
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(-80%);
+        visibility: visible;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-80%);
+        visibility: visible;
+    }
+
+    99% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
