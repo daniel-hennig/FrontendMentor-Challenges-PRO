@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-
+![mockuper](https://user-images.githubusercontent.com/78707309/137191358-de5999a7-5df8-4025-81d8-229306dc6b10.png)
 
 ### Links
 
-- Solution URL: [Preview Solution](https://your-solution-url.com)
+- Solution URL: [Preview Solution](https://www.frontendmentor.io/solutions/multipage-website-semantic-html-scss-vanillajs-M-80HX2QU)
 - Live Demo URL: [See Live-Version](https://payapi-by-danielhennig.netlify.app/)
 
 ## My process
