@@ -36,6 +36,7 @@ footer {
         height: 780px;
         width: 100%;
         margin: auto;
+        pointer-events: none;
 
         @include breakpoint-up('medium') {
             top: unset;
@@ -46,21 +47,21 @@ footer {
         }
     }
 
-    .nav-logo {
-        font-size: 0;
-        line-height: 0;
-    }
-
     .footer-nav-bar {
         position: relative;
         z-index: 1;
-
+        
         @include breakpoint-up('medium') {
             display: flex;
             align-items: center;
             width: 100%;
         }
         
+        .nav-logo {
+            font-size: 0;
+            line-height: 0;
+        }
+
         .footer-nav-links {
             margin: 35px 0;
 
@@ -105,25 +106,26 @@ footer {
             }
         }
 
-        .footer-nav-socials {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 24px;
+    }
 
-            @include breakpoint-up('medium') {
-                margin-left: auto;
-            }
+    .footer-nav-socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
 
-            li {
-                a {
-                    svg path {
-                        fill: #fff;
-                    }
+        @include breakpoint-up('medium') {
+            margin-left: auto;
+        }
 
-                    &:hover svg path, &:focus-visible svg path {
-                        fill: $clr-charmPink;
-                    }
+        li {
+            a {
+                svg path {
+                    fill: #fff;
+                }
+
+                &:hover svg path, &:focus-visible svg path {
+                    fill: $clr-charmPink;
                 }
             }
         }

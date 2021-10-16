@@ -308,6 +308,40 @@ main {
                     row-gap: 2.4375rem; // 39px
                 }
         
+                li {
+                    @include breakpoint-up('large') {
+                        &:nth-of-type(1) {
+                            display: flex;
+                            justify-self: start;
+                        }                     
+
+                        &:nth-of-type(2) {
+                            display: flex;
+                            justify-self: center;
+                        }                     
+
+                        &:nth-of-type(3) {
+                            display: flex;
+                            justify-self: flex-end;
+                        }    
+
+                        &:nth-of-type(4) {
+                            display: flex;
+                            justify-self: start;
+                        }                     
+
+                        &:nth-of-type(5) {
+                            display: flex;
+                            justify-self: center;
+                        }                        
+
+                        &:nth-of-type(6) {
+                            display: flex;
+                            justify-self: flex-end;
+                        }    
+                    }
+                }
+
                 svg {
                     scale: 0.85;
         
@@ -317,26 +351,6 @@ main {
         
                     @include breakpoint-up('large') {
                         scale: 0.9;
-
-                        &:nth-of-type(2) {
-                            display: flex;
-                            justify-self: center;
-                        }                     
-    
-                        &:nth-of-type(5) {
-                            display: flex;
-                            justify-self: center;
-                        }                        
-    
-                        &:nth-of-type(3) {
-                            display: flex;
-                            justify-self: flex-end;
-                        }    
-    
-                        &:nth-of-type(6) {
-                            display: flex;
-                            justify-self: flex-end;
-                        }    
                     }
         
                     @media (min-width: 81.25em) { // 1300px

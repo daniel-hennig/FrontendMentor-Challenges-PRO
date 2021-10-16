@@ -71,12 +71,12 @@ button {
 // Primary
 
 .btn-primary {
-    background-color: $clr-darkPink;
-    color: $clr-linkWaterWhite;
+    background-color: $clr-darkPink !important;
+    color: $clr-linkWaterWhite !important;
 }
 
 .btn-primary:hover, .btn-primary:focus-visible {
-    background-color: $clr-charmPink;
+    background-color: $clr-charmPink !important;
 }
 
 .btn-primary:disabled {

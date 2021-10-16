@@ -222,9 +222,20 @@ main {
                         margin-bottom: 1.0625rem; // 17px
                     }
 
-                    button {
-                        margin-top: 3.25rem; // 52px
-
+                    a {
+                        border-radius: 24px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $ff-publicSans;
+                        font-size: 0.9375rem;
+                        font-weight: 600;
+                        height: 48px;
+                        width: 11.5333rem;
+                        margin: 3.25rem auto 0; // 52px auto 0    
+                        text-align: center;
+                    
                         @include breakpoint-up('medium') {
                             width: 10.5rem; // 168px
                             height: 2.875rem; // 46px
@@ -234,6 +245,7 @@ main {
 
                         @include breakpoint-up('large') {
                             height: 3rem; // 48px
+                            margin: 3.3125rem auto 0 0;
                         }
                     }
                 }
