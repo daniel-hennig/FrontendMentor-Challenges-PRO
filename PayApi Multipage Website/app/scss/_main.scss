@@ -255,9 +255,16 @@ main {
                     display: block;
                     width: 100%;
 
-                    &:hover::placeholder, &:focus-visible::placeholder {
+                    &:hover::placeholder {
                         color: $clr-sanJuanBlue;
                         opacity: 1;
+                    }
+
+                    &:focus-visible::placeholder {
+                        color: $clr-sanJuanBlue;
+                        opacity: 1;
+                        outline: 2px dashed black !important;
+                        outline-offset: 3px !important;
                     }
                 }
 

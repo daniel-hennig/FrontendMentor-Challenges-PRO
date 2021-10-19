@@ -44,6 +44,11 @@ button {
   background-color: #da6c96 !important;
 }
 
+.btn-primary:focus-visible {
+  outline: 2px dashed black !important;
+  outline-offset: -2px !important;
+}
+
 .btn-primary:disabled {
   opacity: 0.5;
 }
@@ -60,6 +65,11 @@ button {
   color: #1c2731;
 }
 
+.btn-secondary-about:focus-visible {
+  outline: 2px dashed #fff !important;
+  outline-offset: 2px !important;
+}
+
 .btn-secondary-about-disabled {
   opacity: 0.5;
 }
@@ -74,6 +84,11 @@ button {
   background-color: #37546d;
   border: 1px solid #37546d;
   color: #fbfcfe;
+}
+
+.btn-secondary-submit:focus-visible {
+  outline: 2px dashed black !important;
+  outline-offset: 2px !important;
 }
 
 .btn-secondary-submit-disabled {
@@ -642,24 +657,52 @@ main .section-header .col-left .form-cta input {
   width: 100%;
 }
 
-main .section-header .col-left .form-cta input:hover::-webkit-input-placeholder, main .section-header .col-left .form-cta input:focus-visible::-webkit-input-placeholder {
+main .section-header .col-left .form-cta input:hover::-webkit-input-placeholder {
   color: #37546d;
   opacity: 1;
 }
 
-main .section-header .col-left .form-cta input:hover:-ms-input-placeholder, main .section-header .col-left .form-cta input:focus-visible:-ms-input-placeholder {
+main .section-header .col-left .form-cta input:hover:-ms-input-placeholder {
   color: #37546d;
   opacity: 1;
 }
 
-main .section-header .col-left .form-cta input:hover::-ms-input-placeholder, main .section-header .col-left .form-cta input:focus-visible::-ms-input-placeholder {
+main .section-header .col-left .form-cta input:hover::-ms-input-placeholder {
   color: #37546d;
   opacity: 1;
 }
 
-main .section-header .col-left .form-cta input:hover::placeholder, main .section-header .col-left .form-cta input:focus-visible::placeholder {
+main .section-header .col-left .form-cta input:hover::placeholder {
   color: #37546d;
   opacity: 1;
+}
+
+main .section-header .col-left .form-cta input:focus-visible::-webkit-input-placeholder {
+  color: #37546d;
+  opacity: 1;
+  outline: 2px dashed black !important;
+  outline-offset: 3px !important;
+}
+
+main .section-header .col-left .form-cta input:focus-visible:-ms-input-placeholder {
+  color: #37546d;
+  opacity: 1;
+  outline: 2px dashed black !important;
+  outline-offset: 3px !important;
+}
+
+main .section-header .col-left .form-cta input:focus-visible::-ms-input-placeholder {
+  color: #37546d;
+  opacity: 1;
+  outline: 2px dashed black !important;
+  outline-offset: 3px !important;
+}
+
+main .section-header .col-left .form-cta input:focus-visible::placeholder {
+  color: #37546d;
+  opacity: 1;
+  outline: 2px dashed black !important;
+  outline-offset: 3px !important;
 }
 
 main .section-header .col-left .form-cta button {

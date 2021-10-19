@@ -79,6 +79,11 @@ button {
     background-color: $clr-charmPink !important;
 }
 
+.btn-primary:focus-visible {
+    outline: 2px dashed black !important;
+    outline-offset: -2px !important;
+}
+
 .btn-primary:disabled {
     opacity: 0.5;
 }
@@ -97,6 +102,11 @@ button {
     color: $clr-mirageBlue;
 }
 
+.btn-secondary-about:focus-visible {
+    outline: 2px dashed #fff !important;
+    outline-offset: 2px !important;
+}
+
 .btn-secondary-about-disabled {
     opacity: 0.5;
 }
@@ -113,6 +123,11 @@ button {
     background-color: $clr-sanJuanBlue;
     border: 1px solid $clr-sanJuanBlue;
     color: $clr-linkWaterWhite;
+}
+
+.btn-secondary-submit:focus-visible {
+    outline: 2px dashed black !important;
+    outline-offset: 2px !important;
 }
 
 .btn-secondary-submit-disabled {
